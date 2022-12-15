@@ -52,7 +52,7 @@
             this.gbUI01.Controls.Add(this.lblUI01);
             this.gbUI01.Location = new System.Drawing.Point(12, 12);
             this.gbUI01.Name = "gbUI01";
-            this.gbUI01.Size = new System.Drawing.Size(560, 95);
+            this.gbUI01.Size = new System.Drawing.Size(560, 76);
             this.gbUI01.TabIndex = 0;
             this.gbUI01.TabStop = false;
             this.gbUI01.Text = "search";
@@ -83,12 +83,12 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgv.Location = new System.Drawing.Point(12, 126);
+            this.dgv.Location = new System.Drawing.Point(12, 108);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowTemplate.Height = 25;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(560, 214);
+            this.dgv.Size = new System.Drawing.Size(560, 232);
             this.dgv.TabIndex = 2;
             // 
             // Column1
@@ -118,7 +118,7 @@
             // lblUI01
             // 
             this.lblUI01.AutoSize = true;
-            this.lblUI01.Location = new System.Drawing.Point(16, 42);
+            this.lblUI01.Location = new System.Drawing.Point(14, 31);
             this.lblUI01.Name = "lblUI01";
             this.lblUI01.Size = new System.Drawing.Size(39, 21);
             this.lblUI01.TabIndex = 0;
@@ -127,7 +127,7 @@
             // lblUI02
             // 
             this.lblUI02.AutoSize = true;
-            this.lblUI02.Location = new System.Drawing.Point(309, 42);
+            this.lblUI02.Location = new System.Drawing.Point(307, 31);
             this.lblUI02.Name = "lblUI02";
             this.lblUI02.Size = new System.Drawing.Size(53, 21);
             this.lblUI02.TabIndex = 0;
@@ -135,7 +135,7 @@
             // 
             // tb
             // 
-            this.tb.Location = new System.Drawing.Point(61, 39);
+            this.tb.Location = new System.Drawing.Point(59, 28);
             this.tb.Name = "tb";
             this.tb.Size = new System.Drawing.Size(226, 29);
             this.tb.TabIndex = 1;
@@ -143,7 +143,7 @@
             // cb
             // 
             this.cb.FormattingEnabled = true;
-            this.cb.Location = new System.Drawing.Point(368, 39);
+            this.cb.Location = new System.Drawing.Point(366, 28);
             this.cb.Name = "cb";
             this.cb.Size = new System.Drawing.Size(173, 29);
             this.cb.TabIndex = 2;
