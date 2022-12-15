@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.gbUI01 = new System.Windows.Forms.GroupBox();
+            this.cb = new System.Windows.Forms.ComboBox();
+            this.tb = new System.Windows.Forms.TextBox();
+            this.lblUI02 = new System.Windows.Forms.Label();
+            this.lblUI01 = new System.Windows.Forms.Label();
             this.link = new System.Windows.Forms.LinkLabel();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblUI01 = new System.Windows.Forms.Label();
-            this.lblUI02 = new System.Windows.Forms.Label();
-            this.tb = new System.Windows.Forms.TextBox();
-            this.cb = new System.Windows.Forms.ComboBox();
+            this.dgvClm01 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvClm02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvClm03 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvClm04 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbUI01.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +57,40 @@
             this.gbUI01.TabStop = false;
             this.gbUI01.Text = "search";
             // 
+            // cb
+            // 
+            this.cb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb.FormattingEnabled = true;
+            this.cb.Location = new System.Drawing.Point(366, 28);
+            this.cb.Name = "cb";
+            this.cb.Size = new System.Drawing.Size(173, 29);
+            this.cb.TabIndex = 1;
+            // 
+            // tb
+            // 
+            this.tb.Location = new System.Drawing.Point(59, 28);
+            this.tb.Name = "tb";
+            this.tb.Size = new System.Drawing.Size(226, 29);
+            this.tb.TabIndex = 0;
+            // 
+            // lblUI02
+            // 
+            this.lblUI02.AutoSize = true;
+            this.lblUI02.Location = new System.Drawing.Point(307, 31);
+            this.lblUI02.Name = "lblUI02";
+            this.lblUI02.Size = new System.Drawing.Size(53, 21);
+            this.lblUI02.TabIndex = 0;
+            this.lblUI02.Text = "genre:";
+            // 
+            // lblUI01
+            // 
+            this.lblUI01.AutoSize = true;
+            this.lblUI01.Location = new System.Drawing.Point(14, 31);
+            this.lblUI01.Name = "lblUI01";
+            this.lblUI01.Size = new System.Drawing.Size(39, 21);
+            this.lblUI01.TabIndex = 0;
+            this.lblUI01.Text = "title:";
+            // 
             // link
             // 
             this.link.BackColor = System.Drawing.Color.PaleGreen;
@@ -64,7 +98,7 @@
             this.link.Location = new System.Drawing.Point(12, 355);
             this.link.Name = "link";
             this.link.Size = new System.Drawing.Size(560, 47);
-            this.link.TabIndex = 1;
+            this.link.TabIndex = 3;
             this.link.TabStop = true;
             this.link.Text = "### GOOGLE search url  ###";
             this.link.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,10 +113,10 @@
             this.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.dgvClm01,
+            this.dgvClm02,
+            this.dgvClm03,
+            this.dgvClm04});
             this.dgv.Location = new System.Drawing.Point(12, 108);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
@@ -91,62 +125,29 @@
             this.dgv.Size = new System.Drawing.Size(560, 232);
             this.dgv.TabIndex = 2;
             // 
-            // Column1
+            // dgvClm01
             // 
-            this.Column1.FillWeight = 1F;
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
+            this.dgvClm01.FillWeight = 1F;
+            this.dgvClm01.HeaderText = "ID";
+            this.dgvClm01.Name = "dgvClm01";
             // 
-            // Column2
+            // dgvClm02
             // 
-            this.Column2.FillWeight = 5F;
-            this.Column2.HeaderText = "title";
-            this.Column2.Name = "Column2";
+            this.dgvClm02.FillWeight = 5F;
+            this.dgvClm02.HeaderText = "title";
+            this.dgvClm02.Name = "dgvClm02";
             // 
-            // Column3
+            // dgvClm03
             // 
-            this.Column3.FillWeight = 2F;
-            this.Column3.HeaderText = "year";
-            this.Column3.Name = "Column3";
+            this.dgvClm03.FillWeight = 2F;
+            this.dgvClm03.HeaderText = "year";
+            this.dgvClm03.Name = "dgvClm03";
             // 
-            // Column4
+            // dgvClm04
             // 
-            this.Column4.FillWeight = 2F;
-            this.Column4.HeaderText = "genre";
-            this.Column4.Name = "Column4";
-            // 
-            // lblUI01
-            // 
-            this.lblUI01.AutoSize = true;
-            this.lblUI01.Location = new System.Drawing.Point(14, 31);
-            this.lblUI01.Name = "lblUI01";
-            this.lblUI01.Size = new System.Drawing.Size(39, 21);
-            this.lblUI01.TabIndex = 0;
-            this.lblUI01.Text = "title:";
-            // 
-            // lblUI02
-            // 
-            this.lblUI02.AutoSize = true;
-            this.lblUI02.Location = new System.Drawing.Point(307, 31);
-            this.lblUI02.Name = "lblUI02";
-            this.lblUI02.Size = new System.Drawing.Size(53, 21);
-            this.lblUI02.TabIndex = 0;
-            this.lblUI02.Text = "genre:";
-            // 
-            // tb
-            // 
-            this.tb.Location = new System.Drawing.Point(59, 28);
-            this.tb.Name = "tb";
-            this.tb.Size = new System.Drawing.Size(226, 29);
-            this.tb.TabIndex = 1;
-            // 
-            // cb
-            // 
-            this.cb.FormattingEnabled = true;
-            this.cb.Location = new System.Drawing.Point(366, 28);
-            this.cb.Name = "cb";
-            this.cb.Size = new System.Drawing.Size(173, 29);
-            this.cb.TabIndex = 2;
+            this.dgvClm04.FillWeight = 2F;
+            this.dgvClm04.HeaderText = "genre";
+            this.dgvClm04.Name = "dgvClm04";
             // 
             // FrmMain
             // 
@@ -158,7 +159,7 @@
             this.Controls.Add(this.link);
             this.Controls.Add(this.gbUI01);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.Text = "Best Video Games of All Time";
             this.gbUI01.ResumeLayout(false);
@@ -177,9 +178,9 @@
         private Label lblUI01;
         private LinkLabel link;
         private DataGridView dgv;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn dgvClm01;
+        private DataGridViewTextBoxColumn dgvClm02;
+        private DataGridViewTextBoxColumn dgvClm03;
+        private DataGridViewTextBoxColumn dgvClm04;
     }
 }
